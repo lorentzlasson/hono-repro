@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "@hono/zod-validator": "npm:@hono/zod-validator",
+    "hono": "npm:hono",
+    "zod": "npm:zod"
+  },
+  "tasks": {
+    "start": "deno run --allow-net main.ts",
+    "test": "deno --allow-net client.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
